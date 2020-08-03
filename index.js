@@ -40,7 +40,7 @@ function makeAGuess(){
 }
 
 function getFilms() {
-  var url = "https://api.myjson.com/bins/1elm6s";
+  var url = "https://api.jsonbin.io/b/5f2757451823333f8f1aed20";
   var request = new XMLHttpRequest();
   request.open("GET", url);
   request.onload = function(){
