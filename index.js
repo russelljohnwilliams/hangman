@@ -13,6 +13,7 @@ window.onload = function(){
 
   document.getElementById("selectRandomTitle").onclick = function selectRandomTitle() {
     getFilms()
+    console.log("got films")
   }
 
   document.getElementById("getText").onclick = function getTextFromGuessInput(){
