@@ -44,7 +44,7 @@ function getFilms() {
   var request = new XMLHttpRequest();
   request.open("GET", url);
   request.onload = function(){
-    if (request.status === 200){
+    if (request.status === 200 || 401){
       var jsonString = request.responseText;
       filmSearch = JSON.parse( jsonString );
       var randomNumber = Math.floor(Math.random()*filmSearch.movies.length)
